@@ -91,7 +91,7 @@ export default function DashboardScreen() {
           {/* Forums (bottom-left) */}
           <Pressable
             style={({ pressed }) => [styles.orbitButton, styles.orbitBottomLeft, pressed && styles.orbitPressed]}
-            onPress={() => { setActiveOrbit('forums'); setShowNotification(true); }}
+            onPress={() => router.push('/forum')}
           >
             <Image source={require('../assets/images/forums.png')} style={styles.orbitIcon} />
             <Text style={styles.orbitLabel}></Text>
